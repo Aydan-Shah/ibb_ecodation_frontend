@@ -1,7 +1,79 @@
-/* * {
+/* 
+Project One page
+Author : Aydan Shahaliyeva
+Date : 14 /June /2023
+Version : v.1
+*/
 
-} */
+/* ############################################### */
+/* Root */
+
+/* ############################################### */
+/* Common Property */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+}
 
 body {
     font-family: 'Manrope', sans-serif;
+    line-height: 1.2;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+img:hover {
+    opacity: 0.98;
+    box-shadow: 1px 4px 1px rgba(0, 0, 0, 0.8);
+    transition: 3s all;
+    cursor: pointer;
+}
+i {
+    font-size: 1.5rem;
+}
+
+
+.my_clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* my special style */
+.fSize1{
+    font-size: 1rem  /*  15px; */
+}
+
+/* Line-clamp style */
+.line-clamps5 {
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    display: -webkit-box;
+    overflow: hidden;
+}
+
+
+/* Header style */
+header {
+    background-image: url("./img/one.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 80vh;
+    padding-top: 4rem;
 }
