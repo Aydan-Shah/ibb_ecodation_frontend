@@ -13,12 +13,16 @@
     <meta name="author" content="Aydan Shahaliyeva">
     <meta name="description" content="for one page">
     <meta name="keyword" content="html5, css3, js, react, bootstrap5">
-    
+
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@400;700&family=Manrope&family=Open+Sans&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@400;700&family=Manrope&family=Open+Sans&family=Oswald:wght@500&display=swap"
+        rel="stylesheet">
 
     <!-- Fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -28,11 +32,65 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-
+<body data-bs-spy="scroll" data-bs-target="navbar_id">
+    <noscript>Bu browser javascripti desteklemiyor.</noscript>
     <!-- start code -->
-        <!-- <h1 class="text-primary">Tutorials</h1>
-        <i class="fa-solid fa-user"></i> -->
+
+    <!-- start nav code -->
+    <nav id="navbar_id" class="navbar navbar-expand-lg navbar-dark bg-dark">
+         <div class="container"> <!-- container-fluid -->
+            <a class="navbar-brand" href="index.html">
+                <i class="fa-brands fa-blogger"></i>
+            </a>
+            <!-- buttonda redirect yapmak -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Anasayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Arama icin ..." aria-label="Ara">
+                    <button class="btn btn-primary" type="submit">Ara</button> <!--  outline-success -->
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- end nav code -->
+
+    <!-- start header code -->
+    <header></header>
+    <!-- end header code -->
+
+    <!-- start footer code -->
+    <footer></footer>
+    <!-- end footer code -->
+
     <!-- end code -->
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
