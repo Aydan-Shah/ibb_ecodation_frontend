@@ -71,8 +71,8 @@
                             <i class="far fa-user text-primary"></i>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Login</a></li>
-                            <li><a class="dropdown-item" href="#">Register</a></li>
+                            <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#loginID">Login</a></li>
+                            <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#registerID">Register</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
@@ -97,6 +97,129 @@
     </nav>
     <!-- end nav code -->
 
+    <!-- Modal trigger button -->
+       
+    <!-- Login Modal Body -->
+    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+    <div class="modal fade" id="loginID" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleId">Login</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <!-- Name input -->
+                        <div class="form-outline mb-4">
+                          <input type="text" id="form5Example1" class="form-control" />
+                          <label class="form-label" for="form5Example1">Name</label>
+                        </div>
+                      
+                        <!-- Email input -->
+                        <div class="form-outline mb-4">
+                          <input type="email" id="form5Example2" class="form-control" />
+                          <label class="form-label" for="form5Example2">Email address</label>
+                        </div>
+                      
+                        <!-- Checkbox -->
+                        <div class="form-check d-flex justify-content-center mb-4">
+                          <input class="form-check-input me-2" type="checkbox" value="" id="form5Example3" checked />
+                          <label class="form-check-label" for="form5Example3">
+                            I have read and agree to the terms
+                          </label>
+                        </div>
+                      
+                        <!-- Submit button -->
+                        <button type="submit" class="btn btn-primary btn-block mb-4">Subscribe</button>
+                      </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+     <!-- Register Modal Body -->
+    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+    <div class="modal fade" id="registerID" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleId">Register</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <!-- 2 column grid layout with text inputs for the first and last names -->
+                        <div class="row mb-4">
+                          <div class="col">
+                            <div class="form-outline">
+                              <input type="text" id="form3Example1" class="form-control" />
+                              <label class="form-label" for="form3Example1">First name</label>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="form-outline">
+                              <input type="text" id="form3Example2" class="form-control" />
+                              <label class="form-label" for="form3Example2">Last name</label>
+                            </div>
+                          </div>
+                        </div>
+                      
+                        <!-- Email input -->
+                        <div class="form-outline mb-4">
+                          <input type="email" id="form3Example3" class="form-control" />
+                          <label class="form-label" for="form3Example3">Email address</label>
+                        </div>
+                      
+                        <!-- Password input -->
+                        <div class="form-outline mb-4">
+                          <input type="password" id="form3Example4" class="form-control" />
+                          <label class="form-label" for="form3Example4">Password</label>
+                        </div>
+                      
+                        <!-- Checkbox -->
+                        <div class="form-check d-flex justify-content-center mb-4">
+                          <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
+                          <label class="form-check-label" for="form2Example33">
+                            Subscribe to our newsletter
+                          </label>
+                        </div>
+                      
+                        <!-- Submit button -->
+                        <button type="submit" class="btn btn-primary btn-block mb-4">Sign up</button>
+                      
+                        <!-- Register buttons -->
+                        <div class="text-center">
+                          <p>or sign up with:</p>
+                          <button type="button" class="btn btn-secondary btn-floating mx-1">
+                            <i class="fab fa-facebook-f"></i>
+                          </button>
+                      
+                          <button type="button" class="btn btn-secondary btn-floating mx-1">
+                            <i class="fab fa-google"></i>
+                          </button>
+                      
+                          <button type="button" class="btn btn-secondary btn-floating mx-1">
+                            <i class="fab fa-twitter"></i>
+                          </button>
+                      
+                          <button type="button" class="btn btn-secondary btn-floating mx-1">
+                            <i class="fab fa-github"></i>
+                          </button>
+                        </div>
+                      </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <!-- start header code -->
     <header id="header_id">
         <div class="text-white">
