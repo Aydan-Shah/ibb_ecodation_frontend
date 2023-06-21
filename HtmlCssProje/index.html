@@ -28,6 +28,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" rel="Stylesheet">
+    </link>
+    <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+
     <!-- external css -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -38,7 +46,8 @@
 
     <!-- start nav code -->
     <nav id="navbar_id" class="navbar navbar-expand-lg navbar-dark bg-dark">
-         <div class="container"> <!-- container-fluid -->
+        <div class="container">
+            <!-- container-fluid -->
             <a class="navbar-brand" href="index.html">
                 <i class="fa-brands fa-blogger"></i>
             </a>
@@ -59,23 +68,28 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
+                            <i class="far fa-user text-primary"></i>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Login</a></li>
+                            <li><a class="dropdown-item" href="#">Register</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     </li>
+                </ul>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        <button class="btn btn-primary" onclick="darkMode()">
+                            <i class="fas fa-moon"></i>
+                        </button>
                     </li>
                 </ul>
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Arama icin ..." aria-label="Ara">
+                    <input id="tags" class="form-control me-2" type="search" placeholder="Arama icin ..."
+                        aria-label="Ara">
                     <button class="btn btn-primary" type="submit">Ara</button> <!--  outline-success -->
                 </form>
             </div>
@@ -97,8 +111,8 @@
     </header>
     <!-- end header code -->
 
-     <!-- start footer code -->
-     <main id="main_id">
+    <!-- start footer code -->
+    <main id="main_id">
         <!-- <section>
             <a href="">Lorem ipsum dolor sit amet.</a>
             <ul>
@@ -110,11 +124,24 @@
             <img src="./img/one.jpg" alt="">
             <p class="line-clamps5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sit sapiente soluta veniam voluptatibus maiores possimus voluptatem doloremque saepe fugiat facere hic illo at mollitia, modi assumenda esse itaque similique non commodi. Nihil nisi mollitia ut! Quibusdam architecto sunt qui corporis. Distinctio vitae cupiditate, officiis doloribus iusto accusamus obcaecati, quos laudantium tempore ab atque numquam illo inventore expedita reiciendis accusantium neque non sed ducimus fugit harum. Ipsum quibusdam repellendus veniam iusto, tenetur vitae voluptatem officiis assumenda quaerat hic molestiae dolores delectus inventore dolorum ipsam accusamus repudiandae laboriosam dolore repellat libero dolorem. Amet cum explicabo asperiores vel soluta odit possimus minus!</p>
         </section> -->
-     </main>
-     <!-- end footer code -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolorem quisquam optio dolores praesentium,
+            eius itaque quis quod consequatur earum fugit deleniti impedit assumenda magnam doloribus asperiores dicta
+            eum atque iusto possimus porro exercitationem vel. Eum nam officiis atque molestias reiciendis, placeat
+            tempore dolor rem! Accusamus suscipit repellat praesentium dignissimos incidunt tempore hic ipsum nostrum
+            nemo nisi quae delectus laborum animi recusandae ducimus illum, ratione, quis error est consectetur at? Hic
+            ex, atque molestiae rerum optio accusantium quisquam suscipit eius consectetur corrupti veniam ducimus
+            commodi dolorem cumque libero eos sapiente. Itaque odit perferendis, soluta nemo esse maxime eligendi modi,
+            placeat, obcaecati ipsa in architecto distinctio? Ipsam nihil, velit, accusantium quidem, natus quibusdam
+            rem sed laboriosam est tempore nisi? Veniam, iste.</p>
+    </main>
+    <!-- end footer code -->
 
     <!-- start footer code -->
-    <footer></footer>
+    <footer class="bg-dark">
+        <div class="text-center p-5" id="copy_right">
+            2021- <span id="date_id">2023</span> &copy; Butun haklar saklidir
+        </div>
+    </footer>
     <!-- end footer code -->
 
     <!-- end code -->
@@ -126,6 +153,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
     </script>
+
+
 
     <!-- external js -->
     <script src="template.js"></script>
