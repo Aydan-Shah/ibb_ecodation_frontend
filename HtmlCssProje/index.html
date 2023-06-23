@@ -72,7 +72,8 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#loginID">Login</a></li>
-                            <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#registerID">Register</a></li>
+                            <li><a class="dropdown-item" data-bs-toggle="modal"
+                                    data-bs-target="#registerID">Register</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
@@ -98,41 +99,42 @@
     <!-- end nav code -->
 
     <!-- Modal trigger button -->
-       
+
     <!-- Login Modal Body -->
     <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
-    <div class="modal fade" id="loginID" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+    <div class="modal fade" id="loginID" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
+        aria-labelledby="modalTitleId" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="modalTitleId">Login</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form>
                         <!-- Name input -->
                         <div class="form-outline mb-4">
-                          <input type="text" id="form5Example1" class="form-control" />
-                          <label class="form-label" for="form5Example1">Name</label>
+                            <input type="text" id="form5Example1" class="form-control" />
+                            <label class="form-label" for="form5Example1">Name</label>
                         </div>
-                      
+
                         <!-- Email input -->
                         <div class="form-outline mb-4">
-                          <input type="email" id="form5Example2" class="form-control" />
-                          <label class="form-label" for="form5Example2">Email address</label>
+                            <input type="email" id="form5Example2" class="form-control" />
+                            <label class="form-label" for="form5Example2">Email address</label>
                         </div>
-                      
+
                         <!-- Checkbox -->
                         <div class="form-check d-flex justify-content-center mb-4">
-                          <input class="form-check-input me-2" type="checkbox" value="" id="form5Example3" checked />
-                          <label class="form-check-label" for="form5Example3">
-                            I have read and agree to the terms
-                          </label>
+                            <input class="form-check-input me-2" type="checkbox" value="" id="form5Example3" checked />
+                            <label class="form-check-label" for="form5Example3">
+                                I have read and agree to the terms
+                            </label>
                         </div>
-                      
+
                         <!-- Submit button -->
                         <button type="submit" class="btn btn-primary btn-block mb-4">Subscribe</button>
-                      </form>
+                    </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
@@ -142,76 +144,77 @@
     </div>
 
 
-     <!-- Register Modal Body -->
+    <!-- Register Modal Body -->
     <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
-    <div class="modal fade" id="registerID" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+    <div class="modal fade" id="registerID" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
+        role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="modalTitleId">Register</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form>
                         <!-- 2 column grid layout with text inputs for the first and last names -->
                         <div class="row mb-4">
-                          <div class="col">
-                            <div class="form-outline">
-                              <input type="text" id="form3Example1" class="form-control" />
-                              <label class="form-label" for="form3Example1">First name</label>
+                            <div class="col">
+                                <div class="form-outline">
+                                    <input type="text" id="form3Example1" class="form-control" />
+                                    <label class="form-label" for="form3Example1">First name</label>
+                                </div>
                             </div>
-                          </div>
-                          <div class="col">
-                            <div class="form-outline">
-                              <input type="text" id="form3Example2" class="form-control" />
-                              <label class="form-label" for="form3Example2">Last name</label>
+                            <div class="col">
+                                <div class="form-outline">
+                                    <input type="text" id="form3Example2" class="form-control" />
+                                    <label class="form-label" for="form3Example2">Last name</label>
+                                </div>
                             </div>
-                          </div>
                         </div>
-                      
+
                         <!-- Email input -->
                         <div class="form-outline mb-4">
-                          <input type="email" id="form3Example3" class="form-control" />
-                          <label class="form-label" for="form3Example3">Email address</label>
+                            <input type="email" id="form3Example3" class="form-control" />
+                            <label class="form-label" for="form3Example3">Email address</label>
                         </div>
-                      
+
                         <!-- Password input -->
                         <div class="form-outline mb-4">
-                          <input type="password" id="form3Example4" class="form-control" />
-                          <label class="form-label" for="form3Example4">Password</label>
+                            <input type="password" id="form3Example4" class="form-control" />
+                            <label class="form-label" for="form3Example4">Password</label>
                         </div>
-                      
+
                         <!-- Checkbox -->
                         <div class="form-check d-flex justify-content-center mb-4">
-                          <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
-                          <label class="form-check-label" for="form2Example33">
-                            Subscribe to our newsletter
-                          </label>
+                            <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
+                            <label class="form-check-label" for="form2Example33">
+                                Subscribe to our newsletter
+                            </label>
                         </div>
-                      
+
                         <!-- Submit button -->
                         <button type="submit" class="btn btn-primary btn-block mb-4">Sign up</button>
-                      
+
                         <!-- Register buttons -->
                         <div class="text-center">
-                          <p>or sign up with:</p>
-                          <button type="button" class="btn btn-secondary btn-floating mx-1">
-                            <i class="fab fa-facebook-f"></i>
-                          </button>
-                      
-                          <button type="button" class="btn btn-secondary btn-floating mx-1">
-                            <i class="fab fa-google"></i>
-                          </button>
-                      
-                          <button type="button" class="btn btn-secondary btn-floating mx-1">
-                            <i class="fab fa-twitter"></i>
-                          </button>
-                      
-                          <button type="button" class="btn btn-secondary btn-floating mx-1">
-                            <i class="fab fa-github"></i>
-                          </button>
+                            <p>or sign up with:</p>
+                            <button type="button" class="btn btn-secondary btn-floating mx-1">
+                                <i class="fab fa-facebook-f"></i>
+                            </button>
+
+                            <button type="button" class="btn btn-secondary btn-floating mx-1">
+                                <i class="fab fa-google"></i>
+                            </button>
+
+                            <button type="button" class="btn btn-secondary btn-floating mx-1">
+                                <i class="fab fa-twitter"></i>
+                            </button>
+
+                            <button type="button" class="btn btn-secondary btn-floating mx-1">
+                                <i class="fab fa-github"></i>
+                            </button>
                         </div>
-                      </form>
+                    </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
@@ -219,7 +222,7 @@
             </div>
         </div>
     </div>
-    
+
     <!-- start header code -->
     <header id="header_id">
         <div class="text-white">
@@ -236,55 +239,49 @@
 
     <!-- start footer code -->
     <main id="main_id">
-        <!-- <section>
-            <a href="">Lorem ipsum dolor sit amet.</a>
-            <ul>
-                <li>item 1</li>
-                <li>item 2</li>
-                <li>item 3</li>
-            </ul>
-            <i class="fa-brands fa-blogger"></i>
-            <img src="./img/one.jpg" alt="">
-            <p class="line-clamps5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sit sapiente soluta veniam voluptatibus maiores possimus voluptatem doloremque saepe fugiat facere hic illo at mollitia, modi assumenda esse itaque similique non commodi. Nihil nisi mollitia ut! Quibusdam architecto sunt qui corporis. Distinctio vitae cupiditate, officiis doloribus iusto accusamus obcaecati, quos laudantium tempore ab atque numquam illo inventore expedita reiciendis accusantium neque non sed ducimus fugit harum. Ipsum quibusdam repellendus veniam iusto, tenetur vitae voluptatem officiis assumenda quaerat hic molestiae dolores delectus inventore dolorum ipsam accusamus repudiandae laboriosam dolore repellat libero dolorem. Amet cum explicabo asperiores vel soluta odit possimus minus!</p>
-        </section> -->
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolorem quisquam optio dolores praesentium,
-            eius itaque quis quod consequatur earum fugit deleniti impedit assumenda magnam doloribus asperiores dicta
-            eum atque iusto possimus porro exercitationem vel. Eum nam officiis atque molestias reiciendis, placeat
-            tempore dolor rem! Accusamus suscipit repellat praesentium dignissimos incidunt tempore hic ipsum nostrum
-            nemo nisi quae delectus laborum animi recusandae ducimus illum, ratione, quis error est consectetur at? Hic
-            ex, atque molestiae rerum optio accusantium quisquam suscipit eius consectetur corrupti veniam ducimus
-            commodi dolorem cumque libero eos sapiente. Itaque odit perferendis, soluta nemo esse maxime eligendi modi,
-            placeat, obcaecati ipsa in architecto distinctio? Ipsam nihil, velit, accusantium quidem, natus quibusdam
-            rem Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum facilis explicabo dolore. Sunt aliquid
-            eum iste minima laudantium modi repellat. sed laboriosam est tempore nisi? Veniam, iste.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid ipsam quidem esse minima atque vitae
-            necessitatibus accusamus animi praesentium quis optio mollitia voluptatibus, iusto reiciendis magni
-            accusantium numquam consequuntur sed nam sit adipisci omnis ratione repellat molestiae? Corrupti architecto
-            voluptate inventore ipsa dolore. Magnam error, totam voluptatem dolor tempore quibusdam? Lorem ipsum dolor
-            sit amet consectetur adipisicing elit. Exercitationem, provident. Nesciunt expedita excepturi voluptatibus
-            inventore magni, aut iure exercitationem atque ex dolores vitae! Tempore similique numquam magnam dolore
-            modi tenetur adipisci mollitia optio consectetur nostrum qui et ea dolor laudantium omnis, tempora totam
-            aperiam! Corporis repudiandae praesentium reprehenderit repellendus aspernatur neque nisi quisquam enim quam
-            amet facere quia minima dolorum eos, consequatur quidem adipisci animi illo? Modi cumque dicta, esse ullam
-            libero hic voluptatem reiciendis dignissimos quas odit molestiae eligendi nisi, debitis neque corporis, quod
-            consequatur? Quod esse dignissimos nisi ad doloribus soluta hic consequatur ipsum, quia temporibus
-            perferendis consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ipsam nemo vitae
-            corrupti illum! Ea mollitia, sint saepe atque voluptates doloremque! Aperiam, ipsam. Consectetur iusto quo
-            earum tempora ipsum expedita laborum, ullam sequi impedit omnis laudantium repudiandae consequatur repellat
-            eius sunt natus, qui molestiae velit, temporibus quibusdam quisquam nulla. Sit delectus eos possimus atque
-            optio consectetur officia odio ex rerum amet harum quisquam repellat commodi, quidem officiis nemo ratione
-            minus molestiae nulla nihil! Nostrum nisi similique qui cum, voluptatibus minus ex illo dolor expedita rem
-            est beatae vitae maiores nesciunt ullam. Tempore odit repellat quas, praesentium repudiandae modi
-            dignissimos nesciunt iusto ea autem, esse debitis distinctio. Voluptatibus ipsam et unde sunt illo incidunt
-            optio itaque eaque recusandae dignissimos, doloribus sit explicabo eligendi quis consequatur consectetur
-            maxime similique? Veniam ducimus ipsa facere optio nihil eaque error id in ex qui? Rerum voluptatem dolorum
-            doloremque eius dicta atque, unde quia voluptate. Culpa, iure minus, explicabo tempora, dolores excepturi
-            molestias quo pariatur eaque delectus impedit voluptates veritatis id. Veritatis, eum similique. Cumque,
-            ducimus pariatur. Possimus quas optio aut nulla quia deleniti dolorem voluptas, culpa asperiores quae
-            repellendus animi dignissimos tempora corrupti tempore nihil, libero voluptate incidunt illum sint totam.
-            Porro facere numquam quas.
-        </p>
+        <section id="messages">
+            <div>
+                <h2 class="myHeading">Calismalarimiz</h2>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="text-center col-12 col-md-4 col-xl-3 mb-4">
+                        <i class="fab fa-html5"></i>
+                        <h4>Html5</h4>
+                        <p class="line-clamps4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi pariatur tenetur quo est
+                            deleniti magnam!</p>
+                        <button class="btn btn-primary">Daha fazla...</button>
+                    </div>
+
+                    <div class="text-center col-12 col-md-4 col-xl-3 mb-4">
+                        <i class="fab fa-css3-alt text-danger"></i>
+                        <h4>CSS3</h4>
+                        <p class="line-clamps4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi pariatur tenetur quo est
+                            deleniti magnam!</p>
+                        <button class="btn btn-primary">Daha fazla...</button>
+                    </div>
+
+                    <div class="text-center col-12 col-md-4 col-xl-3 mb-4">
+                        <i class="fab fa-js"></i>
+                        <h4>Javascript</h4>
+                        <p class="line-clamps4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi pariatur tenetur quo est
+                            deleniti magnam!</p>
+                        <button class="btn btn-primary">Daha fazla...</button>
+                    </div>
+
+                    <div class="text-center col-12 col-md-4 col-xl-3 mb-4">
+                        <i class="fab fa-react text-success"></i>
+                        <h4>React</h4>
+                        <p class="line-clamps4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi pariatur tenetur quo est
+                            deleniti magnam!</p>
+                        <button class="btn btn-primary">Daha fazla...</button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    
+    
     <!-- end footer code -->
 
     <!-- start footer code -->

@@ -56,13 +56,26 @@ i {
     display: block;
     clear: both;
 }
-
+.myHeading {
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    text-shadow: 0.4px -0.9px rgba(0,0,0,.9);
+    opacity: 0.7;
+}
 /* my special style */
 .fSize1{
     font-size: 1rem  /*  15px; */
 }
 
 /* Line-clamp style */
+.line-clamps4 {
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    display: -webkit-box;
+    overflow: hidden;
+}
 .line-clamps5 {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 5;
@@ -87,7 +100,15 @@ header {
     padding-top: 4rem;
 }
 
-
+/* Messages section style */
+#messages{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+#messages i {
+    color: blue;
+    font-size: 5rem;
+}
 /* footer style */
 footer {
     min-height: 10rem;
