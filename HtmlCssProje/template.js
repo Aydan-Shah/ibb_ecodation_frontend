@@ -8,7 +8,7 @@ let darkMode = () => {
 }
 
 // input search
-$(document).ready(function() {
+$(document).ready(function () {
     const searchApi = ["Adana", "Balikesir", "Corum", "Denizli", "Van"];
     $("#tags").autocomplete({
         source: searchApi
@@ -24,12 +24,14 @@ newDate()
 
 //scrollspy 
 $(document).ready(function () {
-    $('body').scrollspy({ target: '#listscroll' });
+    $('body').scrollspy({
+        target: '#listscroll'
+    });
 })
 $(document).ready(function () {
     $('body').on('activate.bs.scrollspy', function () {
         var activeSection = $('#listscroll li.active a').attr('href');
-      
+
         // Gerekirse ek eylemler gerçekleştirin
-      });
+    });
 })

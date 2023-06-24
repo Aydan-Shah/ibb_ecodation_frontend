@@ -32,6 +32,7 @@ body {
 a {
     text-decoration: none;
 }
+
 ul {
     list-style-type: none;
 }
@@ -40,12 +41,14 @@ img {
     max-width: 100%;
     height: auto;
 }
+
 img:hover {
     opacity: 0.98;
     box-shadow: 1px 4px 1px rgba(0, 0, 0, 0.8);
     transition: 3s all;
     cursor: pointer;
 }
+
 i {
     font-size: 1.5rem;
 }
@@ -56,17 +59,20 @@ i {
     display: block;
     clear: both;
 }
+
 .myHeading {
     text-align: center;
     text-decoration: underline;
     margin-bottom: 2rem;
     text-transform: uppercase;
-    text-shadow: 0.4px -0.9px rgba(0,0,0,.9);
+    text-shadow: 0.4px -0.9px rgba(0, 0, 0, .9);
     opacity: 0.7;
 }
+
 /* my special style */
-.fSize1{
-    font-size: 1rem  /*  15px; */
+.fSize1 {
+    font-size: 1rem
+        /*  15px; */
 }
 
 /* Line-clamp style */
@@ -76,6 +82,7 @@ i {
     display: -webkit-box;
     overflow: hidden;
 }
+
 .line-clamps5 {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 5;
@@ -88,17 +95,21 @@ i {
     background-color: var(--templateBgColor);
     color: #ffffff;
 }
+
 .searchDarkLogin {
     display: flex;
     justify-content: space-between;
     gap: 30px;
 }
-.navbar-expand-lg .navbar-nav .nav-link{
+
+.navbar-expand-lg .navbar-nav .nav-link {
     font-size: 15px;
 }
-#listscroll li a.active{  
+
+#listscroll li a.active {
     border: 1px solid white;
 }
+
 /* Header style */
 header {
     background-image: url("./img/one.jpg");
@@ -110,14 +121,16 @@ header {
 }
 
 /* Messages section style */
-#messages{
+#messages {
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
+
 #messages i {
     color: blue;
     font-size: 5rem;
 }
+
 /* Parallax section style */
 #parallax {
     margin-top: 40px;
@@ -129,7 +142,9 @@ header {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-#parallax h2, #parallax p {
+
+#parallax h2,
+#parallax p {
     color: white;
 }
 
@@ -137,11 +152,13 @@ header {
 #newspaper {
     padding: 2rem;
 }
-#newspaper h2 , #newspaper p {
+
+#newspaper h2,
+#newspaper p {
     color: black;
 }
 
-/* Blog section style */ 
+/* Blog section style */
 #blog {
     background-color: #b5b8ff;
 }
@@ -150,6 +167,7 @@ header {
 #contact {
     margin-top: 2rem;
 }
+
 .mapouter {
     position: relative;
     text-align: right;
@@ -182,6 +200,7 @@ footer {
     right: 0;
     bottom: 0;
 }
+
 #back_top:hover {
     opacity: 0.8;
 }
@@ -189,7 +208,7 @@ footer {
 /* Media query */
 @media screen and (max-width: 992px) {
     .searchDarkLogin {
-       display: block;
-       height: 385px;
+        display: block;
+        height: 385px;
     }
 }
