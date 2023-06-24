@@ -45,7 +45,7 @@
     <!-- start code -->
 
     <!-- start nav code -->
-    <nav id="navbar_id" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav id="navbar_id" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
             <!-- container-fluid -->
             <a class="navbar-brand" href="index.html">
@@ -58,50 +58,73 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="listscroll">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Anasayfa</a>
+                        <a class="nav-link" aria-current="page" href="#header_id">Anasayfa</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#parallax">Hakkimizda</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#messages">Calismalarimiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#newspaper">Haberler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <div class="searchDarkLogin">
+                    <form class="d-flex">
+                        <input id="tags" class="form-control me-2" type="search" placeholder="Arama icin ..."
+                            aria-label="Ara">
+                        <button class="btn btn-primary" type="submit">Ara</button> <!--  outline-success -->
+                    </form>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="far fa-user text-primary"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#loginID">Login</a>
+                                </li>
+                                <li><a class="dropdown-item" data-bs-toggle="modal"
+                                        data-bs-target="#registerID">Register</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-primary" onclick="darkMode()">
+                                <i class="fas fa-moon"></i>
+                            </button>
+                        </li>
+                    </ul>
+                    <!-- Language dropdown -->
+                    <div class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="far fa-user text-primary"></i>
+                            data-bs-toggle="dropdown" aria-expanded="false" style="color: white; line-height: 50px">
+                            TR
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#loginID">Login</a></li>
-                            <li><a class="dropdown-item" data-bs-toggle="modal"
-                                    data-bs-target="#registerID">Register</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
+                            <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#">EN</a>
                             </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
-                    </li>
-                </ul>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <button class="btn btn-primary" onclick="darkMode()">
-                            <i class="fas fa-moon"></i>
-                        </button>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <input id="tags" class="form-control me-2" type="search" placeholder="Arama icin ..."
-                        aria-label="Ara">
-                    <button class="btn btn-primary" type="submit">Ara</button> <!--  outline-success -->
-                </form>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
     <!-- end nav code -->
 
-    <!-- Modal trigger button -->
-
     <!-- Login Modal Body -->
-    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
     <div class="modal fade" id="loginID" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
         aria-labelledby="modalTitleId" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
@@ -145,7 +168,6 @@
 
 
     <!-- Register Modal Body -->
-    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
     <div class="modal fade" id="registerID" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
         role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
@@ -239,6 +261,31 @@
 
     <!-- start footer code -->
     <main id="main_id">
+        <!-- parallax start -->
+        <section id="parallax">
+            <div class="container">
+                <div class="row">
+                    <h2 class="myHeading">Hakkimizda</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quis et saepe voluptate,
+                        blanditiis, asperiores quas error ipsum, nam exercitationem commodi est ducimus ratione quae ex.
+                        Beatae culpa cupiditate repellendus optio sint accusamus quidem iste aliquid numquam iusto
+                        veritatis ipsa quia, inventore nostrum tempore quaerat aut error molestias possimus commodi odit
+                        dignissimos exercitationem deleniti! Iure molestias ullam unde repudiandae, repellat magni
+                        itaque maiores nostrum at sit autem libero eaque, similique voluptatem officiis perferendis
+                        illum. Ipsum in suscipit repellat incidunt, veritatis quaerat enim placeat consequatur quisquam
+                        odit? Voluptatum ea sint exercitationem provident, magni perspiciatis cum veniam dignissimos
+                        est, ullam odio corporis! Lorem ipsum dolor sit amet consectetur adipisicing elit. In delectus
+                        facilis quos suscipit amet ullam, eius odio possimus recusandae reiciendis consequatur rem quo
+                        temporibus vero reprehenderit mollitia doloremque est tempore. Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Debitis praesentium provident eos?</p>
+                    <div class="col-4"></div>
+                    <div class="col-4"><a class="btn btn-primary">Daha fazla ...</a></div>
+                    <div class="col-4"></div>
+                </div>
+            </div>
+        </section>
+        <!-- parallax end -->
+
         <!-- messages start -->
         <section id="messages">
             <div>
@@ -286,23 +333,177 @@
         </section>
         <!-- messages end -->
 
-        <!-- paarallax start -->
-        <section id="parallax">
+        <!-- newspaper start -->
+        <section id="newspaper">
             <div class="container">
                 <div class="row">
                     <h2 class="myHeading">Haberler</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quis et saepe voluptate, blanditiis, asperiores quas error ipsum, nam exercitationem commodi est ducimus ratione quae ex. Beatae culpa cupiditate repellendus optio sint accusamus quidem iste aliquid numquam iusto veritatis ipsa quia, inventore nostrum tempore quaerat aut error molestias possimus commodi odit dignissimos exercitationem deleniti! Iure molestias ullam unde repudiandae, repellat magni itaque maiores nostrum at sit autem libero eaque, similique voluptatem officiis perferendis illum. Ipsum in suscipit repellat incidunt, veritatis quaerat enim placeat consequatur quisquam odit? Voluptatum ea sint exercitationem provident, magni perspiciatis cum veniam dignissimos est, ullam odio corporis! Lorem ipsum dolor sit amet consectetur adipisicing elit. In delectus facilis quos suscipit amet ullam, eius odio possimus recusandae reiciendis consequatur rem quo temporibus vero reprehenderit mollitia doloremque est tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis praesentium provident eos?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quis et saepe voluptate,
+                        blanditiis, asperiores quas error ipsum, nam exercitationem commodi est ducimus ratione quae ex.
+                        Beatae culpa cupiditate repellendus optio sint accusamus quidem iste aliquid numquam iusto
+                        veritatis ipsa quia, inventore nostrum tempore quaerat aut error molestias possimus commodi odit
+                        dignissimos exercitationem deleniti! Iure molestias ullam unde repudiandae, repellat magni
+                        itaque maiores nostrum at sit autem libero eaque, similique voluptatem officiis perferendis
+                        illum. Ipsum in suscipit repellat incidunt, veritatis quaerat enim placeat consequatur quisquam
+                        odit? Voluptatum ea sint exercitationem provident, magni perspiciatis cum veniam dignissimos
+                        est, ullam odio corporis! Lorem ipsum dolor sit amet consectetur adipisicing elit. In delectus
+                        facilis quos suscipit amet ullam, eius odio possimus recusandae reiciendis consequatur rem quo
+                        temporibus vero reprehenderit mollitia doloremque est tempore. Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Debitis praesentium provident eos?</p>
                     <div class="col-4"></div>
-                    <div class="col-4"><a class="btn btn-primary">Daha fazla ...</a></div>
+                    <div class="col-4"><a class="btn btn-outline-danger">Daha fazla ...</a></div>
                     <div class="col-4"></div>
                 </div>
             </div>
         </section>
-        <!-- paarallax end -->
+        <!-- newspaper end -->
+
+        <!-- blog start -->
+        <section id="blog">
+            <div class="container">
+                <div class="row">
+                    <h2 class="myHeading">Blog</h2>
+                    <div class="col-md-4 col-xl-3 mb-4 mb-3">
+                        <div class="card">
+                            <img class="card-img-top" src="img/two.jpg" alt="Title">
+                            <div class="card-body">
+                                <h4 class="card-title myHeading">Blog-1</h4>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum
+                                    labore, suscipit molestias saepe aperiam iste qui laudantium? Officiis, maiores
+                                    atque.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xl-3 mb-4 mb-3">
+                        <div class="card">
+                            <img class="card-img-top" src="img/two.jpg" alt="Title">
+                            <div class="card-body">
+                                <h4 class="card-title myHeading">Blog-1</h4>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum
+                                    labore, suscipit molestias saepe aperiam iste qui laudantium? Officiis, maiores
+                                    atque.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xl-3 mb-4 mb-3">
+                        <div class="card">
+                            <img class="card-img-top" src="img/two.jpg" alt="Title">
+                            <div class="card-body">
+                                <h4 class="card-title myHeading">Blog-1</h4>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum
+                                    labore, suscipit molestias saepe aperiam iste qui laudantium? Officiis, maiores
+                                    atque.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xl-3 mb-4 mb-3">
+                        <div class="card">
+                            <img class="card-img-top" src="img/two.jpg" alt="Title">
+                            <div class="card-body">
+                                <h4 class="card-title myHeading">Blog-1</h4>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum
+                                    labore, suscipit molestias saepe aperiam iste qui laudantium? Officiis, maiores
+                                    atque.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xl-3 mb-4 mb-3">
+                        <div class="card">
+                            <img class="card-img-top" src="img/two.jpg" alt="Title">
+                            <div class="card-body">
+                                <h4 class="card-title myHeading">Blog-1</h4>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum
+                                    labore, suscipit molestias saepe aperiam iste qui laudantium? Officiis, maiores
+                                    atque.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xl-3 mb-4 mb-3">
+                        <div class="card">
+                            <img class="card-img-top" src="img/two.jpg" alt="Title">
+                            <div class="card-body">
+                                <h4 class="card-title myHeading">Blog-1</h4>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum
+                                    labore, suscipit molestias saepe aperiam iste qui laudantium? Officiis, maiores
+                                    atque.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xl-3 mb-4 mb-3">
+                        <div class="card">
+                            <img class="card-img-top" src="img/two.jpg" alt="Title">
+                            <div class="card-body">
+                                <h4 class="card-title myHeading">Blog-1</h4>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum
+                                    labore, suscipit molestias saepe aperiam iste qui laudantium? Officiis, maiores
+                                    atque.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xl-3 mb-4 mb-3">
+                        <div class="card">
+                            <img class="card-img-top" src="img/two.jpg" alt="Title">
+                            <div class="card-body">
+                                <h4 class="card-title myHeading">Blog-1</h4>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum
+                                    labore, suscipit molestias saepe aperiam iste qui laudantium? Officiis, maiores
+                                    atque.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <!-- blog end -->
+
+        <!-- contact start -->
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <h2 class="myHeading">Kontakt</h2>
+                    <!-- Contact form -->
+                    <div class="col-12 col-xl-6">
+                        <form>
+                            <!-- Name input -->
+                            <div class="form-outline mb-4">
+                                <input type="text" id="form4Example1" class="form-control" />
+                                <label class="form-label" for="form4Example1">Adiniz...</label>
+                            </div>
+
+                            <!-- Email input -->
+                            <div class="form-outline mb-4">
+                                <input type="email" id="form4Example2" class="form-control" />
+                                <label class="form-label" for="form4Example2">Email addresiniz</label>
+                            </div>
+
+                            <!-- Message input -->
+                            <div class="form-outline mb-4">
+                                <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+                                <label class="form-label" for="form4Example3">Mesajiniz</label>
+                            </div>
+
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-primary btn-block mb-4">Gonder</button>
+                        </form>
+                    </div>
+                    <!-- Google map -->
+                    <div class="col-12 col-xl-6">
+                        <div class="mapouter">
+                            <div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no"
+                                    marginheight="0" marginwidth="0"
+                                    src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=University of Oxford&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                                    href="https://gachanox.io/">Gacha Nox</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- contact end -->
     </main>
 
-
-    <!-- end footer code -->
+    <!-- end code -->
 
     <!-- start footer code -->
     <footer class="bg-dark">
@@ -312,7 +513,7 @@
     </footer>
     <!-- end footer code -->
 
-    <a href="#navbar_id" id="back_top" class="btn btn-primary">
+    <a href="#header_id" id="back_top" class="btn btn-primary">
         <i class="fas fa-arrow-up"></i>
     </a>
     <!-- end code -->
