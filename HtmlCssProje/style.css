@@ -109,6 +109,21 @@ header {
     color: blue;
     font-size: 5rem;
 }
+/* Parallax section style */
+#parallax {
+    background-color: transparent;
+    background-image: url("../HtmlCssProje/img/one.jpg");
+    background-size: cover;
+    height: auto;
+    padding: 2rem;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#parallax h2, #parallax p {
+    color: white;
+}
+
+
 /* footer style */
 footer {
     min-height: 10rem;
